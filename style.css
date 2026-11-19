@@ -1,0 +1,189 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fc;
+    color: #222;
+    transition: 0.3s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #2563eb;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+#themeBtn {
+    padding: 8px 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero span {
+    color: #2563eb;
+}
+
+.hero h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.hero p {
+    max-width: 500px;
+    line-height: 1.7;
+    margin: 0 auto 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+section:not(.hero) {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+#about p {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background: white;
+    padding: 20px 35px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #00000010;
+    font-weight: bold;
+}
+
+#contact p {
+    margin-bottom: 25px;
+}
+
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Dark mode */
+
+body.dark {
+    background: #111827;
+    color: white;
+}
+
+body.dark nav {
+    background: #1f2937;
+}
+
+body.dark nav a {
+    color: white;
+}
+
+body.dark .hero {
+    background: linear-gradient(135deg, #1e293b, #111827);
+}
+
+body.dark .skill {
+    background: #1f2937;
+    color: white;
+}
+
+/* Mobile responsive */
+
+@media (max-width: 600px) {
+    nav {
+        padding: 15px 5%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 12px;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero h3 {
+        font-size: 20px;
+    }
+
+    section:not(.hero) {
+        padding: 60px 6%;
+    }
+}
